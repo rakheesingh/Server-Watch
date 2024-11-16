@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Server-Watch/static/css/main.fb382817.css",
+    "main.js": "/Server-Watch/static/js/main.f04dc1aa.js",
+    "static/js/453.e291e911.chunk.js": "/Server-Watch/static/js/453.e291e911.chunk.js",
+    "index.html": "/Server-Watch/index.html",
+    "main.fb382817.css.map": "/Server-Watch/static/css/main.fb382817.css.map",
+    "main.f04dc1aa.js.map": "/Server-Watch/static/js/main.f04dc1aa.js.map",
+    "453.e291e911.chunk.js.map": "/Server-Watch/static/js/453.e291e911.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb382817.css",
+    "static/js/main.f04dc1aa.js"
+  ]
+}
