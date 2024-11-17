@@ -2,7 +2,6 @@ import React from "react";
 import { Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 
 function PieChartComponent({ metricsData, Xaxis, Yaxis }) {
-  console.log('PieChartComponent metricsData:', metricsData);
 
   const COLORS = ['#2680EB', '#0280FF', '#1E66BC', '#9CA3AF']; // Define your color palette
 
