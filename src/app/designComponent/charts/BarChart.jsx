@@ -10,16 +10,16 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-function BarChartComponent({metricsData}) {
+function BarChartComponent({ metricsData, Xaxis, Yaxis }) {
   return (
     <ResponsiveContainer width="100%" height={300}>
-      <BarChart data={metricsData.barData}>
+      <BarChart data={metricsData}>
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="time" />
+        <XAxis dataKey={Xaxis} />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="memoryUsage" fill="#82ca9d" />
+        <Bar dataKey={Yaxis} fill="#0280FF" />
       </BarChart>
     </ResponsiveContainer>
   );
