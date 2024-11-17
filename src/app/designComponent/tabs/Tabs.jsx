@@ -40,7 +40,7 @@ const Tab = ({ children }) => {
 
   return (
     <button
-      className={`px-4 py-2 text-sm font-medium ${
+      className={`px-4 py-2 text-large font-medium ${
         activeTab === children
           ? "text-brand-blue-1 border-brand-blue-1"
           : "text-gray-600 border-transparent"

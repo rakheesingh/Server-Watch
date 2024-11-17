@@ -12,16 +12,31 @@ import {
 
 function BarChartComponent({ metricsData, Xaxis, Yaxis }) {
   return (
-    <ResponsiveContainer width="100%" height={300}>
-      <BarChart data={metricsData}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey={Xaxis} />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey={Yaxis} fill="#0280FF" />
-      </BarChart>
-    </ResponsiveContainer>
+      <ResponsiveContainer width="100%" height={400}>
+        <BarChart
+          data={metricsData}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey={Xaxis} />
+          <YAxis />
+          <Tooltip
+            contentStyle={{ backgroundColor: "#f5f5f5", border: "none" }}
+            cursor={{ fill: "rgba(0, 0, 0, 0.1)" }}
+          />
+          <Legend
+            wrapperStyle={{
+              paddingTop: "10px",
+            }}
+          />
+          <Bar dataKey={Yaxis} fill="#0280FF" barSize={40} />
+        </BarChart>
+      </ResponsiveContainer>
   );
 }
 
