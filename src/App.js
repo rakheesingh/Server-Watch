@@ -1,9 +1,13 @@
+import { TabContext } from "./app/designComponent/tabs/Tabs";
+import Header from "./app/Header";
+import Dashboard from "./app/pages/Dashboard";
 
 function App() {
   return (
-    <div className="text-brand-blue-2 tinos-regular">
-      Starting the cloud service journey 
-    </div>
+   <TabContext>
+    <Header/>
+   <Dashboard/>
+   </TabContext>
   );
 }
 
