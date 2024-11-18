@@ -19,7 +19,6 @@ function NotificationSearch({
         notification[field]?.toLowerCase()?.includes(searchValue)
       )
     );
-    console.log("newNotifications",newNotifications);
     setFilteredNotification(() => ({ notifications: newNotifications, isSearching: true }));
   };
   const debounce = useDebounce(handleSearch, 100);
