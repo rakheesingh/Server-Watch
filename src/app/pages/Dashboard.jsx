@@ -1,12 +1,12 @@
 import React from "react";
-import ServerData from "../store/ServerData";
+import ServerDataContext from "../store/ServerDataContext";
 import ServerMetrics from "../features/serverMetrics";
 
 function DashboardWithContext() {
   return (
-    <ServerData>
+    <ServerDataContext>
       <Dashboard />
-    </ServerData>
+    </ServerDataContext>
   );
 }
 

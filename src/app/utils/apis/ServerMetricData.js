@@ -1,6 +1,6 @@
 export const serverMetricsData = {
   ServerA: {
-    cpuData: [
+    cpuUsage: [
       { time: "00:00", value: 20 },
       { time: "01:00", value: 35 },
       { time: "02:00", value: 40 },
@@ -15,7 +15,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 75 },
       { time: "12:00", value: 800 },
     ],
-    memoryData: [
+    memoryUsage: [
       { time: "00:00", value: 70 },
       { time: "01:00", value: 65 },
       { time: "02:00", value: 60 },
@@ -30,7 +30,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 15 },
       { time: "12:00", value: 10 },
     ],
-    diskData: [
+    diskSpace: [
       { time: "00:00", value: 80 },
       { time: "01:00", value: 75 },
       { time: "02:00", value: 70 },
@@ -45,7 +45,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 25 },
       { time: "12:00", value: 200 },
     ],
-    latencyData: [
+    latency: [
       { time: "00:00", value: 120 },
       { time: "01:00", value: 110 },
       { time: "02:00", value: 100 },
@@ -62,7 +62,7 @@ export const serverMetricsData = {
     ],
   },
   ServerB: {
-    cpuData: [
+    cpuUsage: [
       { time: "00:00", value: 35 },
       { time: "01:00", value: 40 },
       { time: "02:00", value: 45 },
@@ -77,7 +77,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 80 },
       { time: "12:00", value: 85 },
     ],
-    memoryData: [
+    memoryUsage: [
       { time: "00:00", value: 65 },
       { time: "01:00", value: 60 },
       { time: "02:00", value: 55 },
@@ -92,7 +92,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 10 },
       { time: "12:00", value: 5 },
     ],
-    diskData: [
+    diskSpace: [
       { time: "00:00", value: 75 },
       { time: "01:00", value: 70 },
       { time: "02:00", value: 65 },
@@ -107,7 +107,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 20 },
       { time: "12:00", value: 15 },
     ],
-    latencyData: [
+    latency: [
       { time: "00:00", value: 110 },
       { time: "01:00", value: 100 },
       { time: "02:00", value: 90 },
@@ -124,7 +124,7 @@ export const serverMetricsData = {
     ],
   },
   ServerC: {
-    cpuData: [
+    cpuUsage: [
       { time: "00:00", value: 40 },
       { time: "01:00", value: 45 },
       { time: "02:00", value: 50 },
@@ -139,7 +139,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 85 },
       { time: "12:00", value: 90 },
     ],
-    memoryData: [
+    memoryUsage: [
       { time: "00:00", value: 60 },
       { time: "01:00", value: 55 },
       { time: "02:00", value: 50 },
@@ -154,7 +154,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 5 },
       { time: "12:00", value: 0 },
     ],
-    diskData: [
+    diskSpace: [
       { time: "00:00", value: 70 },
       { time: "01:00", value: 65 },
       { time: "02:00", value: 60 },
@@ -169,7 +169,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 15 },
       { time: "12:00", value: 10 },
     ],
-    latencyData: [
+    latency: [
       { time: "00:00", value: 100 },
       { time: "01:00", value: 90 },
       { time: "02:00", value: 80 },
@@ -187,7 +187,7 @@ export const serverMetricsData = {
   },
 
   ServerD: {
-    cpuData: [
+    cpuUsage: [
       { time: "00:00", value: 42 },
       { time: "01:00", value: 45 },
       { time: "02:00", value: 56 },
@@ -202,7 +202,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 80 },
       { time: "12:00", value: 140 },
     ],
-    memoryData: [
+    memoryUsage: [
       { time: "00:00", value: 60 },
       { time: "01:00", value: 55 },
       { time: "02:00", value: 500 },
@@ -217,7 +217,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 5 },
       { time: "12:00", value: 1000 },
     ],
-    diskData: [
+    diskSpace: [
       { time: "00:00", value: 70 },
       { time: "01:00", value: 65 },
       { time: "02:00", value: 60 },
@@ -232,7 +232,7 @@ export const serverMetricsData = {
       { time: "11:00", value: 13 },
       { time: "12:00", value: 13 },
     ],
-    latencyData: [
+    latency: [
       { time: "00:00", value: 100 },
       { time: "01:00", value: 90 },
       { time: "02:00", value: 80 },

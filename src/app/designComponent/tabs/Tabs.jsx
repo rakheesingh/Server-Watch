@@ -39,12 +39,12 @@ const Tab = ({ children }) => {
   const { activeTab, switchTab } = useTabs();
 
   return (
-    <button
+    <button 
       className={`px-4 py-2 text-large font-medium ${
         activeTab === children
           ? "text-brand-blue-1 border-brand-blue-1"
           : "text-gray-600 border-transparent"
-      } border-b-2 transition-colors duration-300 focus:outline-none`}
+      } outline-none border-b-2 transition-all ease-in-out duration-300 cursor-pointer`}
       onClick={() => switchTab(children)}
     >
       {children}
