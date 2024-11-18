@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/Server-Watch/static/css/main.fb382817.css",
-    "main.js": "/Server-Watch/static/js/main.f04dc1aa.js",
-    "static/js/453.e291e911.chunk.js": "/Server-Watch/static/js/453.e291e911.chunk.js",
+    "main.css": "/Server-Watch/static/css/main.0023e70f.css",
+    "main.js": "/Server-Watch/static/js/main.eb6bceba.js",
+    "static/js/453.d1eaf8bb.chunk.js": "/Server-Watch/static/js/453.d1eaf8bb.chunk.js",
     "index.html": "/Server-Watch/index.html",
-    "main.fb382817.css.map": "/Server-Watch/static/css/main.fb382817.css.map",
-    "main.f04dc1aa.js.map": "/Server-Watch/static/js/main.f04dc1aa.js.map",
-    "453.e291e911.chunk.js.map": "/Server-Watch/static/js/453.e291e911.chunk.js.map"
+    "static/media/Bell.svg": "/Server-Watch/static/media/Bell.b9eb2b6bbdd80fb60bf03dda135a7eff.svg",
+    "static/media/LogoIcon.svg": "/Server-Watch/static/media/LogoIcon.a40460355d02ac60e547bc432043555a.svg",
+    "static/media/Close.svg": "/Server-Watch/static/media/Close.828d65d5450ea99c6bd1260e940c86b1.svg",
+    "main.0023e70f.css.map": "/Server-Watch/static/css/main.0023e70f.css.map",
+    "main.eb6bceba.js.map": "/Server-Watch/static/js/main.eb6bceba.js.map",
+    "453.d1eaf8bb.chunk.js.map": "/Server-Watch/static/js/453.d1eaf8bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb382817.css",
-    "static/js/main.f04dc1aa.js"
+    "static/css/main.0023e70f.css",
+    "static/js/main.eb6bceba.js"
   ]
 }
