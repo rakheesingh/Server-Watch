@@ -6,7 +6,7 @@ import NotificationModal from "./layouts/NotificationModal";
 
 function NotificationIconWithNumber() {
   const [openNotification, setOpenNotification] = useState(false);
-  const { totalNewNotification, updateNotifications, notifications } =
+  const { totalNewNotification, updateNotifications, notifications, dismissNotification } =
     useSimulateNotification(openNotification);
 
   const updateNotifiactionSeen = () => {
@@ -19,7 +19,7 @@ function NotificationIconWithNumber() {
   };
   return (
     <div
-      className="relative p-2 flex w-10 h-full cursor-pointer"
+      className="relative p-2 flex w-10 h-full"
       onClick={(e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -32,11 +32,12 @@ function NotificationIconWithNumber() {
           {totalNewNotification}
         </div>
       )}
-      <BellIcon className="text-gray-700 w-6 h-6" />
+      <BellIcon className="text-gray-700 w-6 h-6 cursor-pointer" />
       {openNotification && (
         <NotificationModal
           isOpen={openNotification}
           notifications={notifications}
+          dismissNotification={dismissNotification}
           closeModal={() => {
             setOpenNotification(false);
           }}

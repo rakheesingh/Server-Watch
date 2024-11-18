@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Button from "../buttons/Button";
 import { CloseIcon } from "../../assets/icons";
+import { TextLarge } from "../typography/Typography";
 
 const Dialog = ({ isOpen = false, onClose, title, children }) => {
   const ref = useRef(null);
@@ -35,10 +36,10 @@ const Dialog = ({ isOpen = false, onClose, title, children }) => {
       className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 p-0"
       style={{ width: "100vw", height: "100vh" }}
     >
-      <div className="bg-white rounded-lg shadow-lg w-1/2 p-5">
+      <div className="bg-white rounded-lg shadow-lg w-5/6 md:w-1/2 p-5">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-semibold">{title}</h2>
-          <div className="w-6 h-6">
+        <TextLarge className="text-2xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis">{title}</TextLarge>
+        <div className="w-6 h-6">
             <Button
               variant={"tertiary"}
               className="text-gray-700 text-2xl leading-none hover:text-gray-900 cursor-pointer w-full p-0"
