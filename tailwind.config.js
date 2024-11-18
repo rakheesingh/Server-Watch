@@ -143,45 +143,7 @@ module.exports = {
         '17/20': '85%',
         '19/20': '95%'
       },
-      keyframes: {
-        slideUp: {
-          '0%':  {
-            opacity: "0.5",
-            transform: "translateY(120px)"
-          },
-          '100%':   {
-            opacity: "1",
-            transform: "translateY(0)"
-          }
-        },
-        slideLeft:{
-          "0%": {
-            transform: "translateX(100%)",
-          },
-          "100%": {
-            transform: "translateX(0%)",
-          }
-        },
-        appear: {
-          '0%': {
-            opacity: "0",
-          },
-          '100%': {
-            opacity: "1",
-          }
-        },
-        fadeIn: {
-          '0%': { opacity: 0, transform: 'scale(0.95)' },
-          '100%': { opacity: 1, transform: 'scale(1)' },
-        },
-      },
-      animation: {
-        fadeIn: 'fadeIn 0.3s ease-in-out forwards',
-        slideUp: 'slideUp 0.5s ease',
-        slideLeft: 'slideLeft 0.5s ease',
-        appear: 'appear 1s ease',
-        infiniteScrollUp: 'scrollUp 5s infinite',
-      }
+
     },
   },
   variants: {
