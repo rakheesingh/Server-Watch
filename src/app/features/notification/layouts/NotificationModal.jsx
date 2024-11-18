@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Dialog from "../../../designComponent/modal/Modal";
 import { getTypeColor } from "../utils";
 import NotificationSearch from "./NotificationSearch";
+import AlertNotifier from "../../../designComponent/alert/AlertNotifier";
 
-function NotificationModal({ isOpen, closeModal, notifications }) {
+function NotificationModal({ isOpen, closeModal, notifications, dismissNotification }) {
   const [filteredNotifications, setFilteredNotification] = useState({});
-  console.log("filteredNotifications", filteredNotifications);
   const notificationToRender = filteredNotifications.isSearching
     ? filteredNotifications?.notifications
     : notifications;
@@ -27,26 +27,16 @@ function NotificationModal({ isOpen, closeModal, notifications }) {
               notifications={notifications}
               setFilteredNotification={setFilteredNotification}
             />
-            <div className="overflow-y-scroll max-h-96 space-y-4">
-              {notificationToRender?.map((notification, index) => (
-                <div
-                  key={index}
-                  className={`p-2 border-l-4 mx-4 ${getTypeColor(
-                    notification.type
-                  )} bg-gray-50 rounded-lg shadow-sm`}
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="font-bold text-gray-700">
-                      {notification.type}
-                    </div>
-                    <div className="text-sm text-gray-500">
-                      {new Date(notification.timestamp).toLocaleString()}
-                    </div>
-                  </div>
-                  <div className="mt-1 text-gray-600">
-                    {notification.message}
-                  </div>
-                </div>
+            <div className="overflow-y-scroll max-h-96 flex flex-col gap-3 pt-3">
+              {notificationToRender?.map((notification) => (
+                <AlertNotifier
+                  key={notification.timestamp}
+                  timestamp={notification.timestamp}
+                  type={notification.type}
+                  message={notification.message}
+                  getTypeColor={getTypeColor}
+                  dismissNotification={dismissNotification}
+                />
               ))}
             </div>
           </div>
