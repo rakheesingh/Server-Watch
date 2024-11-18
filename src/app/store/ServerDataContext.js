@@ -1,9 +1,10 @@
 import React, { createContext, useReducer } from "react";
+import { getAllServerName } from "../features/serverMetrics/utils";
 
 export const ServerContext = createContext();
 
 const initialState = {
-  serverId: "ServerA",
+  serverId: getAllServerName()?.[0],
 };
 
 const actionsType = {
@@ -21,10 +22,10 @@ const reducer = (state, action) => {
   }
 };
 
-function ServerData({ children }) {
+function ServerDataContext({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return <ServerContext.Provider value={{...state, dispatch}}>{children}</ServerContext.Provider>;
 }
 
-export default ServerData;
+export default ServerDataContext;
