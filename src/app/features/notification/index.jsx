@@ -33,14 +33,15 @@ function NotificationIconWithNumber() {
         </div>
       )}
       <BellIcon className="text-gray-700 w-6 h-6" />
-      <NotificationModal
-        isOpen={openNotification}
-        notifications={notifications}
-        closeModal={() => {
-          setOpenNotification(false);
-          updateNotifiactionSeen();
-        }}
-      />
+      {openNotification && (
+        <NotificationModal
+          isOpen={openNotification}
+          notifications={notifications}
+          closeModal={() => {
+            setOpenNotification(false);
+          }}
+        />
+      )}
     </div>
   );
 }

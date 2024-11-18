@@ -35,7 +35,7 @@ const Dialog = ({ isOpen = false, onClose, title, children }) => {
       className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 p-0"
       style={{ width: "100vw", height: "100vh" }}
     >
-      <div className="bg-white rounded-lg shadow-lg w-1/2 min-w-max p-5">
+      <div className="bg-white rounded-lg shadow-lg w-1/2 p-5">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-2xl font-semibold">{title}</h2>
           <div className="w-6 h-6">
