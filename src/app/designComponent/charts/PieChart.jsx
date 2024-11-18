@@ -3,14 +3,13 @@ import { Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from "recha
 
 function PieChartComponent({ metricsData, Xaxis, Yaxis }) {
 
-  const COLORS = ['#2680EB', '#0280FF', '#1E66BC', '#9CA3AF']; // Define your color palette
+  const COLORS = [0.6, 0.7, 0.8, 0.9]; // Define your color palette
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '400px' }}>
       <ResponsiveContainer width="100%" height="100%" >
         <PieChart>
-          <Tooltip />
-          <Legend />
+          <Tooltip />        
           <Pie
             data={metricsData}
             dataKey={Yaxis}
@@ -21,7 +20,7 @@ function PieChartComponent({ metricsData, Xaxis, Yaxis }) {
             label
           >
             {metricsData.map((_, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell key={`cell-${index}`} fill={"#0280FF"} style={{opacity: COLORS[index]}} />
             ))}
           </Pie>
         </PieChart>
