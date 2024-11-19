@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CloseIcon, SearchIcon } from "../../assets/icons";
 
-function SearchComponent({ debounce }) {
+function SearchComponent({ debounce, placeholder }) {
   const [searchValue, setSearchValue] = useState("");
 
   const handleSearch = (e) => {
@@ -23,6 +23,7 @@ function SearchComponent({ debounce }) {
         <SearchIcon />
         <input
           type="text"
+          placeholder={placeholder}
           value={searchValue}
           className="outline-none border-none w-full h-8"
           onChange={handleSearch}

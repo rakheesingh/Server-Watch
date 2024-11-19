@@ -22,7 +22,7 @@ function NotificationSearch({
     setFilteredNotification(() => ({ notifications: newNotifications, isSearching: true }));
   };
   const debounce = useDebounce(handleSearch, 100);
-  return <SearchComponent debounce={debounce} />;
+  return <SearchComponent debounce={debounce} placeholder={"Search by server name, region or alert type"} />;
 }
 
 export default NotificationSearch;
