@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 
@@ -28,5 +29,12 @@ function PieChartComponent({ metricsData, Xaxis, Yaxis }) {
     </div>
   );
 }
+
+PieChartComponent.propTypes = {
+  metricsData: PropTypes.array.isRequired,
+  xAxis: PropTypes.string,
+  yAxis: PropTypes.string
+};
+
 
 export default PieChartComponent;

@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
  */
 export default function Button({
   className,
-  variant,
+  variant ="primary",
   children,
-  loading,
+  loading = false,
   startIcon,
-  onClick,
-  disabled,
+  onClick = () => {},
+  disabled = false,
   ...props
 }) {
 
@@ -60,9 +60,3 @@ Button.propTypes = {
   disabled: PropTypes.bool,
 };
 
-Button.defaultProps = {
-  variant: "primary",
-  loading: false,
-  disabled: false,
-  onClick: () => null,
-};

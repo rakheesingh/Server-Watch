@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import { CloseIcon } from "../../assets/icons";
+import PropTypes from "prop-types";
 
 function AlertNotifier({
   getTypeColor,
@@ -31,5 +32,14 @@ function AlertNotifier({
     </div>
   );
 }
+
+AlertNotifier.propTypes = {
+  getTypeColor: PropTypes.func,
+  type: PropTypes.string,
+  timestamp: PropTypes.any,
+  message: PropTypes.string,
+  dismissNotification: PropTypes.func,
+  disabled: PropTypes.bool,
+};
 
 export default memo(AlertNotifier);

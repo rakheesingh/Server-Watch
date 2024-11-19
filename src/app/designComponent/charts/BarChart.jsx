@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import {
   BarChart,
@@ -37,5 +38,11 @@ function BarChartComponent({ metricsData, Xaxis, Yaxis }) {
     </ResponsiveContainer>
   );
 }
+
+BarChartComponent.propTypes = {
+  metricsData: PropTypes.array.isRequired,
+  xAxis: PropTypes.string,
+  yAxis: PropTypes.string
+};
 
 export default BarChartComponent;

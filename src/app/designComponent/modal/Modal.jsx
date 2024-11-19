@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Button from "../buttons/Button";
 import { CloseIcon } from "../../assets/icons";
 import { TextLarge } from "../typography/Typography";
+import PropTypes from "prop-types";
 
 const Dialog = ({ isOpen = false, onClose, title, children }) => {
   const ref = useRef(null);
@@ -53,6 +54,12 @@ const Dialog = ({ isOpen = false, onClose, title, children }) => {
       </div>
     </div>
   );
+};
+
+Dialog.propTypes = {
+  isOpen: PropTypes.bool,
+  onClose: PropTypes.func,
+  title: PropTypes.string.isRequired
 };
 
 export default Dialog;

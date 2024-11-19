@@ -53,7 +53,7 @@ const Tab = ({ children }) => {
 };
 
 Tabs.propTypes = {
-  tabs: PropTypes.arrayOf(PropTypes.string).isRequired,
+  tabs: PropTypes.object.isRequired,
 };
 
 export default Tabs;

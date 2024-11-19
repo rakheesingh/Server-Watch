@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Select from "react-select";
 import { TextBase } from "../typography/Typography";
+import PropTypes from "prop-types";
 
 const ReactSelect = ({
   options,
@@ -28,5 +29,13 @@ const ReactSelect = ({
     </div>
   );
 };
+
+ReactSelect.propTypes = {
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func,
+  options: PropTypes.array
+};
+
 
 export default ReactSelect;

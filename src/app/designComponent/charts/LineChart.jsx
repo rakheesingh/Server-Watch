@@ -8,6 +8,7 @@ import {
   Line,
   CartesianGrid,
 } from "recharts";
+import PropTypes from "prop-types";
 
 function LineChartComponent({ metricsData, xAxis, yAxis }) {
   return (
@@ -31,5 +32,11 @@ function LineChartComponent({ metricsData, xAxis, yAxis }) {
     </ResponsiveContainer>
   );
 }
+
+LineChartComponent.propTypes = {
+  metricsData: PropTypes.array.isRequired,
+  xAxis: PropTypes.string,
+  yAxis: PropTypes.string
+};
 
 export default LineChartComponent;
