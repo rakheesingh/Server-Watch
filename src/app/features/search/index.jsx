@@ -1,14 +1,21 @@
 import React, { useState } from "react";
-import { SearchIcon } from "../../assets/icons";
+import { CloseIcon, SearchIcon } from "../../assets/icons";
 
 function SearchComponent({ debounce }) {
-    const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState("");
+
   const handleSearch = (e) => {
     e.preventDefault();
     const value = e.target.value;
     setSearchValue(value);
     if(debounce) debounce(value);
   };
+
+  const clearInput = (e) =>{
+   e.stopPropagation();
+   setSearchValue("");
+   debounce("");
+  }
 
   return (
     <>
@@ -20,6 +27,7 @@ function SearchComponent({ debounce }) {
           className="outline-none border-none w-full h-8"
           onChange={handleSearch}
         />
+        <CloseIcon className="w-4 h-4 cursor-pointer hover:animate-pulse" onClick={clearInput}/>
       </div>
     </>
   );
