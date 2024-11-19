@@ -3,7 +3,7 @@ import { servers } from "../../../utils/apis/ServerComparison";
 import BarChartComponent from "../../../designComponent/charts/BarChart";
 import PieChartComponent from "../../../designComponent/charts/PieChart";
 import { MetricsChartMapping } from "../../../utils/constant";
-import { TextSM, TextXL, TextXS } from "../../../designComponent/typography/Typography";
+import { TextSM, TextXL } from "../../../designComponent/typography/Typography";
 import { MerticComaprisionLegendMapping } from "../Constant";
 
 const CHART_COMPONENT_MAP = {

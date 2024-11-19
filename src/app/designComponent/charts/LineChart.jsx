@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Tooltip,
-  Legend,
   ResponsiveContainer,
   LineChart,
   XAxis,

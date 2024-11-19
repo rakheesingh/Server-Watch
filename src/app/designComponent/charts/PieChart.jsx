@@ -1,5 +1,5 @@
 import React from "react";
-import { Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
+import { Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 
 function PieChartComponent({ metricsData, Xaxis, Yaxis }) {
 
