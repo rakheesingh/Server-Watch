@@ -64,8 +64,11 @@ Chart options: Allows visualization of data using bar and pie charts.
 Metrics comparison: Displays various server performance metrics side by side for comparison.
 Components
 ServersComparison.js: Displays the server comparison charts and descriptions.
+
 BarChartComponent: Renders bar charts for comparing metrics.
+
 PieChartComponent: Renders pie charts for visual comparison.
+
 TextSM, TextXL: Typography components for text display.
 Flow
 The component maps server data and sends it to the chart components.
@@ -86,16 +89,31 @@ Modal for notifications: A modal window displays detailed notifications when cli
 Components
 
 NotificationIconWithNumber.js: Displays the notification bell icon with a badge indicating the number of unread notifications.
-useSimulateNotification.js: Custom hook to simulate and manage notifications.
+
+useSimulateNotification.js: Custom hook to simulate and manage notifications every 1 mins.
+
 NotificationModal.js: Modal component displaying the full list of notifications.
 BellIcon: Icon component used for the notification bell.
 Flow
+
 The notification icon displays the number of new notifications.
 When clicked, the notification modal opens, showing the details of all notifications.
 Users can mark notifications as seen, which updates the state.
-General Notes
-State Management
+
 React Context: ServerContext is used to manage and share the selected server's ID across components.
 Custom Hooks
 useSimulateNotification: Custom hook for simulating and managing the state of notifications (e.g., fetching, dismissing, updating notification counts).
-Future Enhancements
+
+
+**Test Cases**
+
+Added unit test case for Search Component
+
+**Performece**
+1. Tried to use small memory images mostly SVGS
+2. Used memo for avoiding re render of any compoent
+3. Added debounce to enhance the performance of the search 
+
+Mesaure performance of website on light house --- 
+FCP - 0.8s
+LCP= 0.9s
