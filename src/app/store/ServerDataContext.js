@@ -1,6 +1,7 @@
 import React, { createContext, useReducer } from "react";
 import { getAllServerName } from "../features/serverMetrics/utils";
 
+//Server ID selected by user in dashbaord
 export const ServerContext = createContext();
 
 const initialState = {

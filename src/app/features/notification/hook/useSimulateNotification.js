@@ -4,7 +4,7 @@ import { alertsNotification } from "../network";
 
 function useSimulateNotification() {
   const [notifications, setNotifications] = useState([]);
-  const intervalDiff = 10 * 1000;
+  const intervalDiff = 1 * 60 * 1000; //every 1 min notification simulation
 
   useEffect(() => {
     let timerid = setInterval(() => {
@@ -24,12 +24,9 @@ function useSimulateNotification() {
     const newNotifications = notifications.filter(notification => {
       return new Date(notification.timestamp).getTime() !== new Date(timestamp).getTime();
     });
-    console.log(newNotifications.length, notifications.length);
-
     setNotifications(newNotifications);
   }
   
-
   return {
     notifications,
     updateNotifications: setNotifications,

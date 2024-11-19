@@ -4,6 +4,7 @@ import ServerMetrics from "../features/serverMetrics";
 
 function DashboardWithContext() {
   return (
+    //Sending server metrics data to dashbaord selected by users
     <ServerDataContext>
       <Dashboard />
     </ServerDataContext>
