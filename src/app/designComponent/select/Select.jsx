@@ -34,7 +34,8 @@ ReactSelect.propTypes = {
   label: PropTypes.string,
   placeholder: PropTypes.string,
   onChange: PropTypes.func,
-  options: PropTypes.array
+  options: PropTypes.array,
+  initialSelected: PropTypes.string
 };
 
 

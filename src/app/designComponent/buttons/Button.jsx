@@ -1,3 +1,4 @@
+import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 /**
@@ -5,7 +6,7 @@ import PropTypes from "prop-types";
  */
 export default function Button({
   className,
-  variant ="primary",
+  variant = "primary",
   children,
   loading = false,
   startIcon,
@@ -13,7 +14,6 @@ export default function Button({
   disabled = false,
   ...props
 }) {
-
   const handleClick = (e) => {
     const isDisabled = disabled || loading;
     if (isDisabled) {
@@ -41,11 +41,11 @@ export default function Button({
           "bg-transparent text-gray-700 font-medium hover:text-brand-blue-1 active:text-brand-blue-3 ":
             variant === "tertiary",
         },
-        className,
+        className
       )}
       {...props}
     >
-      {startIcon && <div className='ml-1 mr-2'>{startIcon}</div>}
+      {startIcon && <div className="ml-1 mr-2">{startIcon}</div>}
       {children}
     </button>
   );
@@ -53,10 +53,14 @@ export default function Button({
 
 Button.propTypes = {
   variant: PropTypes.oneOf(["primary", "secondary", "tertiary"]),
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element, PropTypes.node]),
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.element,
+    PropTypes.node,
+  ]),
   startIcon: PropTypes.element,
   loading: PropTypes.bool,
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
+  className: PropTypes.string
 };
-

@@ -56,4 +56,8 @@ Tabs.propTypes = {
   tabs: PropTypes.object.isRequired,
 };
 
+TabContext.prototype = {
+  children: PropTypes.element
+}
+
 export default Tabs;

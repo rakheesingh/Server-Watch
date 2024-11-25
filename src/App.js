@@ -1,3 +1,4 @@
+import React from "react";
 import { TabContext } from "./app/designComponent/tabs/Tabs";
 import Header from "./app/Header";
 import Dashboard from "./app/pages/Dashboard";

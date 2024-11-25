@@ -32,8 +32,8 @@ function PieChartComponent({ metricsData, Xaxis, Yaxis }) {
 
 PieChartComponent.propTypes = {
   metricsData: PropTypes.array.isRequired,
-  xAxis: PropTypes.string,
-  yAxis: PropTypes.string
+  Xaxis: PropTypes.string,
+  Yaxis: PropTypes.string
 };
 
 

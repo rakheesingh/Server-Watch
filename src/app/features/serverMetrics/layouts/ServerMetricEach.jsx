@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ServerContext } from "../../../store/ServerDataContext";
 import { fetchServerMetrics } from "../network";
-import "../style.css";
 import { TextSM, TextXL } from "../../../designComponent/typography/Typography";
 import ReactSelect from "../../../designComponent/select/Select";
 import { getAllServerName } from "../utils";

@@ -59,7 +59,8 @@ const Dialog = ({ isOpen = false, onClose, title, children }) => {
 Dialog.propTypes = {
   isOpen: PropTypes.bool,
   onClose: PropTypes.func,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  children: PropTypes.element
 };
 
 export default Dialog;

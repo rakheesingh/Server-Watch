@@ -41,8 +41,8 @@ function BarChartComponent({ metricsData, Xaxis, Yaxis }) {
 
 BarChartComponent.propTypes = {
   metricsData: PropTypes.array.isRequired,
-  xAxis: PropTypes.string,
-  yAxis: PropTypes.string
+  Xaxis: PropTypes.string,
+  Yaxis: PropTypes.string
 };
 
 export default BarChartComponent;
