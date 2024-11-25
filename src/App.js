@@ -4,10 +4,10 @@ import Dashboard from "./app/pages/Dashboard";
 
 function App() {
   return (
-   <TabContext>
-    <Header/>
-   <Dashboard/>
-   </TabContext>
+    <TabContext>
+      <Header />
+      <Dashboard />
+    </TabContext>
   );
 }
 
